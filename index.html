@@ -1,6 +1,6 @@
 <!--
     Title: Home Page
-    Use: Welcome Users to the webpage
+    Use: Welcome Users to the webpage and has menu for navigation
     Author: Gregory Romans
     School/Term: Mizzou Fall 2023
     Developed Sept 9, 2023
@@ -13,6 +13,8 @@
                <title>Page Title</title>
                <link rel="stylesheet"
                href="style.css">
+               <link rel="stylesheet"
+               href="nav.css">
         </head>
             <body>
                 <h1 id="heading">Welcome!</h1>
@@ -20,6 +22,21 @@
                 <p>
                     The Purpose of this website is to inform the users about my experience, academics, and personality.
                 </p>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
                 <footer>
                     <p> Gregory Romans</p>
                     <p> Phone: (417) 372-2367</p>
