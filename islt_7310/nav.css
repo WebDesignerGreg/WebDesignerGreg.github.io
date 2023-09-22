@@ -27,7 +27,6 @@
 }
 .nav  li:hover .dropdown li{
     display:block;
-    position:absolute;
     background-color: cyan;
 }
 
