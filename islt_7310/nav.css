@@ -1,35 +1,40 @@
-.nav {
+ul {
     list-style-type: none;
-    display:block;
+    margin-bottom: 5px;
     width: 100%;
-    top:0;
-    color:white;
-    background-color: cyan;
+    top: 0;
+    padding: 15px 15px 15px 315px;
+}
+ul li {
+    text-align: center;
+    background-color:blue;
+    margin-left: 10px;
+    margin-top: 0;
+    display:inline-block;
+    border: solid black;
+    width: 200px;
+    padding: 20px 0 20px 0;
     position: relative;
 }
-.nav > li {
-    display:inline-block;
-    border: 1px solid black;
-    text-decoration:none;
-    width: 15%;
-    padding: 0;
-    margin-right: 50px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
+ul li a {
+    text-decoration: none;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
 }
-.nav > li:hover{
-    border: 3px solid rgb(255, 166, 0);
+ul > li:hover {
+    border: solid 5px orange;
 }
-.dropdown li{
+.projects{
     display:none;
-    position:relative;
+    position: absolute;
+    width: 175px;
+    margin-left: -163%;
+    margin-top: 25%;
 }
-.nav  li:hover .dropdown li{
-    display:block;
-    background-color: cyan;
+ul li:hover .projects{
+    display: block;
 }
-
-.dropdown > li:hover{
-    border: 3px solid rgb(255, 166, 0);
+ul li .projects a{
+    text-decoration:none;
 }

@@ -1,1 +1,16 @@
-#heading {color: rgb(54, 54, 216);}
+#heading {
+    color: blue
+}
+#heading1 {
+    color: rgb(54, 54, 216);
+    text-align:center;
+}
+#heading2 {
+    text-align:center;
+}
+#footer {
+    margin-top: 375px;
+}
+#text {
+    font-family:'Times New Roman', Times, serif;
+}
