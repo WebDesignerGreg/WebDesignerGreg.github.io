@@ -14,3 +14,35 @@
 #text {
     font-family:'Times New Roman', Times, serif;
 }
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-gap: 15px 15px;
+    height: 720px;
+}
+header{
+    background-color: blue;
+    color: white;
+    grid-column: 1 / span 3;
+    font-size: 100px;
+}
+nav{
+    grid-column: 1;
+    grid-row: 2;
+}
+content{
+    grid-column:2 / span 3;
+    grid-row: 2;
+}
+footer{
+    background-color: blue;
+    color: white;
+    grid-column:1 / span 3;
+    grid-row: 3;
+}
+.mainpage {
+    justify-content: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+}

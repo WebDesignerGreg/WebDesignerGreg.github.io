@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid</title>
+	<style type="text/css">
+		.wrapper {
+			display: grid;
+			grid-template-columns: 1fr 5fr 2fr;
+			grid-template-rows: 5fr 20fr 5fr;
+			grid-gap: 10px;
+			height: 720px;
+		}
+
+		header {
+			grid-column-start: 1;
+			grid-column-end: 4;
+		}
+
+		footer {
+			grid-column-start: 1;
+			grid-column-end: 4;
+		}
+
+		.wrapper * {
+			background: orange;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 1px;
+			margin-right: 1px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="items">HEADER</header>
+		<nav class="items">NAV</nav>
+		<div class="items contents"> <p id="text">
+            My name is <em>Gregory Romans</em> and I am a
+        third-year student at Mizzou. My current
+        major is educational studies with an emphasis
+        on video game/simulation design. 
+        <br/>My previous
+        major before I switched was biology because I
+        wanted to work in the medicLcal field, however
+        due to low grades and enduring constant stress
+        and anxiety from the classes. I decided to
+        switch to something I can actually be good at,
+        which is video games and technology. I think
+        that since I am familiar with video games and
+        technology I would succeed more in these
+        courses. I have also been playing video games
+        since I was old enough to hold a controller.
+        Therefore, I figured why not make a career out
+        of the thing I love to do. I am new to learning
+        how everything but I am excited to challenge
+        myself and learn new skills
+        </p></div>
+		<aside class="items">ASIDE</aside>
+		<footer class="items">FOOTER</footer>
+	</div>
+</body>
+</html>
