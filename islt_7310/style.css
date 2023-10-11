@@ -91,6 +91,9 @@ mainmenu {
     list2{
         width: 100%;
     }
+    table{
+        width: 100%;
+    }
 }
 reflection1 {
     display:grid;
@@ -138,4 +141,30 @@ icon1:hover {
 }
 icon2:hover {
     transform: scale(1.2,1.2);
+}
+contact {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px 15px;
+    height: 720px;
+}
+table {
+    width: 800px;
+    margin-left:350px;
+    grid-row: 2;
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+table tr th {
+    border: 1px solid black;
+    width: 400px;
+    background-color: blue;
+    color: white;
+}
+table tr td {
+    width: 400px;
+    text-decoration:none;
+    border: 1px solid black;
+    text-align: center;
 }
