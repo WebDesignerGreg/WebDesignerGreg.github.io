@@ -11,10 +11,39 @@
             background-attachment: fixed;
             background-size: 100% 100%;
         }
-
+        .grid-container{
+            display:grid;
+            height:400px;
+            grid-template-columns: 30% 30%;
+            justify-content: space-evenly;
+            align-content:center;
+        }
+        .item1{
+            grid-column: 1 / 1;
+            text-align:center;
+        }
+        .item2{
+            grid-column: 2;
+            text-align:center;
+        }
        </style>
     </head>
     <body>
-        <h1>Table of Contents</h1>
+        <div class ="grid-container">
+            <div class="item1"><h1>Introduction</h1>
+                <p> Feeling Creative!<br>
+                This is the place to be. This website will help enter the mindset of a creative writer without overwhelming you with information <br>
+            This website will also give you tips and tricks you can apply to your writing.</p>
+            <p><b>Learning Objective</b><br>
+            AFter exploring this Website. We hope you will have a deeper understanding on what you can do as a writer.</p>
+        </div>
+            <div class="item2">
+                <h1>Table of Contents</h1>
+                <h2><a href="project1.html">Project 1 - Image</h2></a>
+                <h2><a href="project2.html">Project 2 - Audio</h2></a>
+                <h2><a href="project3.html">Project 3 - Video</h2></a>
+                <h2><a href="project4.html">Project 4</h2></a>
+            </div>
+        </div>
     </body>
 </html>
