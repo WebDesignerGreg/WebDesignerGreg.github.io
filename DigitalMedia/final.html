@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=2">>
+       <title>project 2</title>
+       <style>
+         /* width */
+         ::-webkit-scrollbar {
+                width: 10px;
+        }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+         body{
+            background-image: url(bookbackground2.jpg);
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            overflow: scroll; /* Show scrollbars */
+        }
+        .grid-container{
+            display:grid;
+            height:auto;
+            grid-template-columns: 30% 30%;
+            justify-content: space-evenly;
+            align-content:center;
+        }
+        .item1{
+            grid-column: 1 / 1;
+            text-align:center;
+        }
+        .item2{
+            grid-column: 2;
+            text-align:center;
+        }
+
+       </style>
+    </head>
+    <body>
+        <div class ="grid-container">
+            <div class="item1">
+                <h1>Feeling Creative!</h1><p>
+                This is the place to be. This website will help enter the mindset of a creative writer without overwhelming you with information <br>
+                This website will also give you tips and tricks you can apply to your writing.</p>
+                <p><b>Learning Objective</b><br>
+                After exploring this Website. We hope you will have a deeper understanding on what you can do as a writer.</p>
+        </div>
+            <div class="item2">
+                <h1>Audio Book</h1>
+                <p>
+                    One of the best ways to bring your creativity to life is narrating your own short stories after you write them.<br>
+                    This can help you visualize your story and get an idea of how you want to write it moving forward<br>
+                    On the Next page is a an example of a story being narrated <br>
+                    Listen to it to get an idea of how narrating your stories help bring it to life
+                </p>
+                <audio controls>
+                    <source src="project2.greg.mp3" type="audio/mpeg">
+                </audio>
+               <br><h1>Video</h1>
+               <p>Another way to help you get into a creative mindset is relaxing
+                What better to do that then listening to relaxing music and seeing beautfiul visuals. Hence, the video for this page is to help feel calm. Creative writing is a calm process, not a stressful one. Take a minute to watch the video and then get started writing. <br>It's important to take breaks!
+            </p>
+                <a href="https://drive.google.com/file/d/15t6cEbD9_80fq5sWBjkaZ9SQVOjF1bG4/view?usp=sharing">Video Link</a><br>
+                <a href="https://docs.google.com/document/d/13z0MiY59CC4eTxYyfYsfc41RxhDF-N8RuCX2491FfIY/edit?usp=sharing">Video Information</a>
+                <br>  <h1>Try it Yourself!</h1>
+                <p>Here you will test your Creative Writing Abilities by wqriting a short story about the random prompt given to you after you click the button. Whatever prompt you get, write about it. It may just be a word or an idea. It's up to you to interpet and creatively come up with a story. My advice: Do not overthink it, just write what comes to mind. After you write your story, Read it out loud. How does it sound to you? Then you can figure out how you want to expand your story. What works? What doesn't work?<br>
+                    <b>Be Creative!</b></p>
+                <button id="generateButton">Generate Topic</button>
+                <h2>Topic:</h2>
+                <form>
+                    <textarea rows="12" cols="65" placeholder="Type your Short Story Here..."></textarea>
+                </form>
+        <script>
+            // Define an array of words
+            const words = ["The Perspective of Something Small", "The Final Battle", "Motivation", "Animal", "Painting on the Wall", "Coming Home", "A Hero's Journey", "Finding Love", "War", "Theft", "Fear", "The Apocalypse", "The Invasion"];
+            // Get a reference to the button element
+            const generateButton = document.getElementById("generateButton");
+            // Function to generate a random word
+          
+            function generateRandomWord() {
+          
+              const randomIndex = Math.floor(Math.random() * words.length);
+          
+              const randomWord = words[randomIndex];
+          
+              document.querySelector("h2").textContent = `Topic: ${randomWord}`;
+          
+            }
+            // Attach an event listener to the button
+            generateButton.addEventListener("click", generateRandomWord);
+          </script>
+        </div>
+    </body>
+</html>
